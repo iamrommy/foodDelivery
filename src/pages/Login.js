@@ -112,7 +112,7 @@ const Login = () => {
             <p className="w-full border-t border-[1px] absolute border-gray-300"></p>
             <span className="absolute text-gray-300 bg-white z-10 px-4">Or sign in with</span>
         </div>
-        <a href={`${process.env.REACT_APP_BASE_URL}/auth/googlelogin`} className="p-1.5 mx-auto border-2 my-10 rounded-full text-xl border-gray-300 w-min cursor-pointer block">
+        <a href={`${process.env.REACT_APP_BASE_URL}/api/v1/auth/googlelogin`} className="p-1.5 mx-auto border-2 my-10 rounded-full text-xl border-gray-300 w-min cursor-pointer block">
             <FcGoogle />
         </a>
         <div className="flex justify-center text-sm font-semibold gap-1">
