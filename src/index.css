@@ -1,0 +1,26 @@
+@tailwind base;	
+@tailwind components;
+@tailwind utilities;
+
+body, html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+  
+/* AnalogClock.css */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 30px; /* Adjust size as needed */
+  height: 30px; /* Adjust size as needed */
+  background: #FE8C00; /* Color of the slider thumb */
+  cursor: pointer;
+  border-radius: 50%; /* Makes the slider thumb circular */
+  margin-top: -10px; 
+  margin-bottom: -10px; 
+}
+.slider::-webkit-slider-thumb:hover{
+
+    border: 2px solid black;
+}
