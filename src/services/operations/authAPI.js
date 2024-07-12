@@ -214,7 +214,7 @@ export function getProfile() {
       localStorage.setItem("user", JSON.stringify(response.data.user))
     } catch (error) {
       // console.log("LOGIN API ERROR............", error)
-      toast.error("Login Failed")
+      console.log("Login Failed")
     }
     toast.dismiss(toastId)
   }
