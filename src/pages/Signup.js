@@ -139,7 +139,7 @@ const Signup = () => {
           Or sign up with 
         </span>
       </div>
-      <a href={`${process.env.REACT_APP_BASE_URL}/auth/googlelogin`} className="block p-1.5 mx-auto border-2 my-5 rounded-full text-xl border-gray-300 w-min cursor-pointer">
+      <a href={`${process.env.REACT_APP_BASE_URL}/api/v1/auth/googlelogin`} className="block p-1.5 mx-auto border-2 my-5 rounded-full text-xl border-gray-300 w-min cursor-pointer">
         <FcGoogle />
       </a>
       <div className="flex justify-center text-sm font-semibold gap-1">
