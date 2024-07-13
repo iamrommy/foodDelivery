@@ -49,18 +49,21 @@ const Login = () => {
             style={{ backgroundImage: `url(${bg1})` }}
           ></div>
           <div
-            className={`absolute bottom-0 bg-white w-full p-3 rounded-t-3xl transition-all duration-1000 ease-in-out 
+            className={`absolute bottom-0 bg-white w-full p-3 rounded-t-3xl transition-all duration-1000 ease-in-out flex justify-center
               ${user ? "h-[60%]" : "h-full"}`}
           >
-            <div className="w-16 h-[4px] mx-auto bg-gray-300 rounded-full"></div>
-            <div className="w-56 my-9 mx-auto"><img src={success} alt="Success"/></div>
-            <h1 className="text-3xl font-bold text-center mb-2">Login Successful</h1>
-            <Link to="/home/speed=1"><button className="w-full bg-[#FE8C00] p-4 my-6 rounded-full text-white active:bg-orange-500">Go to Tracking Screen</button></Link>
-            <button onClick={()=>dispatch(logout(navigate))} className="text-gray-400 w-full text-center border-2 border-gray-200 p-4 mb-4 rounded-full text-base font-semibold cursor-pointer hover:underline">Logout</button>
+            <div className="w-full max-w-2xl">  
+              <div className="w-16 h-[4px] mx-auto bg-gray-300 rounded-full"></div>
+              <div className="w-56 my-9 mx-auto"><img src={success} alt="Success"/></div>
+              <h1 className="text-3xl font-bold text-center mb-2">Login Successful</h1>
+              <Link to="/home/speed=1"><button className="w-full bg-[#FE8C00] p-4 my-6 rounded-full text-white active:bg-orange-500">Go to Tracking Screen</button></Link>
+              <button onClick={()=>dispatch(logout(navigate))} className="text-gray-400 w-full text-center border-2 border-gray-200 p-4 mb-4 rounded-full text-base font-semibold cursor-pointer hover:underline">Logout</button>
+            </div>
           </div>
         </div>
 
-      {!user && <div className="absolute w-full bg-white p-5 pt-8">
+      {!user && {!user && <div className="absolute w-full bg-white p-5 pt-8 flex justify-center">
+        <div className="w-full max-w-3xl">
         <div className="mb-6">
           <h1 className="text-4xl font-semibold mb-2 w-[70%]">Login to your account.</h1>
           <p className="text-sm font-medium text-gray-500">Please sign in to your account </p>
@@ -118,6 +121,7 @@ const Login = () => {
         <div className="flex justify-center text-sm font-semibold gap-1">
           <span>Don't have an account? </span><Link to="/signup" className="text-[#FE8C00] hover:underline cursor-pointer active:text-orange-500"> Register</Link>
         </div>
+      </div>
       </div>
         }
     </>
