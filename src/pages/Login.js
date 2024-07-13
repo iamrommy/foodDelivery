@@ -62,7 +62,7 @@ const Login = () => {
           </div>
         </div>
 
-      {!user && {!user && <div className="absolute w-full bg-white p-5 pt-8 flex justify-center">
+      {!user && <div className="absolute w-full bg-white p-5 pt-8 flex justify-center">
         <div className="w-full max-w-3xl">
         <div className="mb-6">
           <h1 className="text-4xl font-semibold mb-2 w-[70%]">Login to your account.</h1>
@@ -81,7 +81,7 @@ const Login = () => {
               onChange={handleOnChange}
               placeholder="Enter email"
               className="w-full border-2 border-gray-100 rounded-[8px] p-4 text-sm mb-5"
-            />
+              />
           </label>
           <label className="relative">
             <p className="text-sm font-medium mb-2">
@@ -95,11 +95,11 @@ const Login = () => {
               onChange={handleOnChange}
               placeholder="Password"
               className="w-full border-2 border-gray-100 rounded-[8px] p-4 text-sm"
-            />
+              />
             <span 
               onClick={() => setShowPassword((prev) => !prev)} 
               className="absolute right-2 top-[105px] z-[10] cursor-pointer"
-            >
+              >
               {showPassword ? (
                 <AiOutlineEyeInvisible fontSize={19} fill="#000"/>
               ) : (
@@ -121,7 +121,7 @@ const Login = () => {
         <div className="flex justify-center text-sm font-semibold gap-1">
           <span>Don't have an account? </span><Link to="/signup" className="text-[#FE8C00] hover:underline cursor-pointer active:text-orange-500"> Register</Link>
         </div>
-      </div>
+        </div>
       </div>
         }
     </>
